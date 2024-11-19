@@ -1,12 +1,19 @@
-import './App.css';
-import {BrowserRouter, Routes, Route} from "react-router-dom";
+import "./App.css";
+import "./output.css";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import LoginComponent from "./routes/Login";
+import SignupComponent from "./routes/Signup";
+import HomeComponent from './routes/Home';
 
 function App() {
   return (
-    <div className="App">
+    <div className="w-screen h-screen font-poppins">
       <BrowserRouter>
         <Routes>
-          <Route path='/' element={<div>hi</div>} />
+          <Route path="/" element={<div className="bg-blue-500">hi</div>} />
+          <Route path="/login" element={<LoginComponent />} />
+          <Route path="/signup" element={<SignupComponent />} />
+          <Route path="/home" element={<HomeComponent />} />
         </Routes>
       </BrowserRouter>
     </div>
