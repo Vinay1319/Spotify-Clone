@@ -1,11 +1,11 @@
 const mongoose = require("mongoose");
-// how to create a model
-//step 1 require mongoose
-//step 2 create a mongoose schema (structure of a user)
-//step 3 create a model
+// How to create a model
+// Step 1 :require mongoose
+// Step 2 :Create a mongoose schema (structure of a user)
+// Step 3 : Create a model
 
 const User = new mongoose.Schema({
-    firstName:{
+    firstName: {
         type: String,
         required: true,
     },
@@ -26,21 +26,23 @@ const User = new mongoose.Schema({
         type: String,
         required: true,
     },
-    likedSongs :{
+    likedSongs: {
+        // We will change this to array later
         type: String,
         default: "",
     },
-    likedPlaylists:{
+    likedPlaylists: {
+        // We will change this to array later
         type: String,
         default: "",
     },
     subscribedArtists: {
+        // We will change this to array later
         type: String,
         default: "",
     },
-}); 
+});
 
-
-const UserModel = mongoose.model("User", User); //"collections", schema
+const UserModel = mongoose.model("User", User);
 
 module.exports = UserModel;

@@ -70,7 +70,6 @@
 
 // export default LoginComponent;
 
-
 import {useState} from "react";
 import {Icon} from "@iconify/react";
 import TextInput from "../components/shared/TextInput";

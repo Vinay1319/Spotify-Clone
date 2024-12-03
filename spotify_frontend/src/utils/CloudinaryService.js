@@ -15,7 +15,6 @@
 //   return window.cloudinary.openUploadWidget(options, callback);
 // };
 
-
 import {Cloudinary as CoreCloudinary, Util} from "cloudinary-core";
 
 export const url = (publicId, options) => {

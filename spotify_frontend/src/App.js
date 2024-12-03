@@ -58,7 +58,6 @@
 
 // export default App;
 
-
 import "./output.css";
 import {useState} from "react";
 import {BrowserRouter, Routes, Route, Navigate} from "react-router-dom";
@@ -96,7 +95,6 @@ function App() {
                         }}
                     >
                         <Routes>
-                            <Route path="/" element={<HelloComponent />} />
                             <Route
                                 path="/home"
                                 element={<LoggedInHomeComponent />}
