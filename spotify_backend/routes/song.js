@@ -60,7 +60,7 @@ router.get(
   async (req, res) => {
     const { songName } = req.params;
 
-    const songs = await Song.find({ name: songName });
+    const songs = await Song.find({ name: songName }).populate("artist");
     return res.status(200).json({ data: songs });
   }
 );
