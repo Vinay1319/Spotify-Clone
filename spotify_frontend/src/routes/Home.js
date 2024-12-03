@@ -341,3 +341,4 @@ const Card = ({ title, description, imgUrl }) => {
 };
 
 export default Home;
+
