@@ -401,7 +401,7 @@ const LoggedInContainer = ({ children, curActiveScreen }) => {
           </div>
           <div className="px-5">
             <div className="border border-gray-100 text-white w-2/5 flex px-2 py-1 rounded-full items-center justify-center hover:border-white cursor-pointer">
-              <Icon icon="carbon:earth-europe-africa" />
+              <Icon icon="bitcoin-icons:globe-filled" />
               <div className="ml-2 text-sm font-semibold">English</div>
             </div>
           </div>
