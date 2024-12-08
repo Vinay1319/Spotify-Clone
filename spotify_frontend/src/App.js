@@ -119,7 +119,7 @@ function App() {
                         <Route path="/home" element={<HomeComponent />} />
                         <Route path="/login" element={<LoginComponent />} />
                         <Route path="/signup" element={<SignupComponent />} />
-                        <Route path="*" element={<Navigate to="/login" />} />
+                        <Route path="*" element={<Navigate to="/home" />} />
                     </Routes>
                 )}
             </BrowserRouter>

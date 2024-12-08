@@ -1,1 +1,1 @@
-export const backendUrl = "https://spotify-clone-nsdr.onrender.com";
+export const backendUrl = "https://spotify-clone-43kd.onrender.com";
